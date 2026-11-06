@@ -306,7 +306,7 @@ a:hover .link-arrow .icon, .link-arrow:hover .icon { transform: translate(3px, -
 /* crimson on the left so the headline stays readable, clear video on the right */
 .hero__fade {
   position: absolute; z-index: -1; inset: 0;
-  background: linear-gradient(90deg, var(--crimson-deep) 14%, rgb(125 0 47 / 0.82) 32%, rgb(125 0 47 / 0.25) 56%, transparent 72%);
+  background: linear-gradient(90deg, rgb(125 0 47 / 0.78) 0%, rgb(125 0 47 / 0.55) 30%, rgb(125 0 47 / 0.12) 52%, transparent 64%);
 }
 .hero__inner { position: relative; }
 .hero__copy { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; max-width: 600px; padding-block: 20px; }
@@ -315,10 +315,11 @@ a:hover .link-arrow .icon, .link-arrow:hover .icon { transform: translate(3px, -
 .hero .live-dot::after { border-color: #5ee08c; }
 .hero .live-dot.is-off { background: var(--fg-2); }
 .hero__te { margin: 0; font-size: clamp(20px, 1.9vw, 25px); line-height: 1.4; color: var(--yellow-soft); }
-.hero__title { margin: 0; font-size: min(7.4vw, 13.5svh, 116px); line-height: 1.04; text-shadow: 0 2px 18px rgb(56 6 26 / 0.45); }
+.hero__title { margin: 0; font-size: min(7.4vw, 13.5svh, 116px); line-height: 1.04; text-shadow: 0 2px 18px rgb(56 6 26 / 0.6); }
 /* sized on the mask, not the inner span, or the big line-height keeps a gap above it */
 .hero__title .line-mask:last-child { margin-top: 0.14em; font-size: 0.4em; line-height: 1.2; }
 .hero__title em { font-style: normal; color: var(--yellow); }
+.hero__lead, .hero__te, .hero__where { text-shadow: 0 1px 10px rgb(56 6 26 / 0.7); }
 .hero__lead { margin: 0; max-width: 500px; font-size: 18px; line-height: 1.55; color: var(--fg-2); }
 .hero__ctas { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 6px; }
 .hero__where { display: inline-flex; align-items: center; gap: 8px; margin: 4px 0 0; font-size: 15px; font-weight: 600; color: var(--fg-2); }
@@ -331,7 +332,7 @@ a:hover .link-arrow .icon, .link-arrow:hover .icon { transform: translate(3px, -
   .hero__video video, .hero__video img { object-position: 60% 50%; }
   .hero__fade {
     bottom: auto; height: calc(var(--nav-h) + min(78vw, 58svh));
-    background: linear-gradient(180deg, transparent 55%, rgb(125 0 47 / 0.75) 82%, var(--crimson-deep) 100%);
+    background: linear-gradient(180deg, transparent 70%, rgb(125 0 47 / 0.5) 90%, var(--crimson-deep) 100%);
   }
   .hero__inner { padding-top: calc(min(78vw, 58svh) - 60px); }
   .hero__copy { align-items: center; text-align: center; margin-inline: auto; gap: 14px; padding-block: 0; }
